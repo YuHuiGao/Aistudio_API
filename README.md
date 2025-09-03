@@ -296,6 +296,26 @@ def call_qwen_vl_api(question, image_path, api_url="api_url", api_key="your_key"
 
 ![屏幕截图 2025-09-03 101427](./assets/2025-09-03101427.png)
 
+# 查看是否部署成功
+
+AIstudio主页点击部署-项目部署即可找到部署的API
+
+![2025-09-03135936](./assets/2025-09-03135936.png)
+
+调用API的方法
+
+将test_connection.py复制到第三方的电脑中
+
+复制调用示例中的CURL中的链接，然后将test_connection.py中的api_url进行替换
+
+例如网页显示的为https://api-bbueh7f7k90cr68d.aistudio-app.com
+
+则填写到程序中的应该为https://api-bbueh7f7k90cr68d.aistudio-app.com/v1/chat/completions
+
+运行程序，若能正常显示结果则代表部署成功
+
+![2025-09-03140309](./assets/2025-09-03140309.png)
+
 
 
 # 注意事项
@@ -307,3 +327,5 @@ def call_qwen_vl_api(question, image_path, api_url="api_url", api_key="your_key"
 3、部署服务较慢，可能部署事件长达一个小时，请耐心等待；若时间过长，则代表着部署失败，请不要等待“服务部署中，请耐心等待”消失
 
 4、在服务部署后，在不需要是可以前往AIstudio首页-部署-项目部署，点击取消
+
+![2025-09-03140309](./assets/2025-09-03140309.png)
